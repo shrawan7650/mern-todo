@@ -35,7 +35,7 @@ export const UpdateTodo = () => {
           todo
         );
         toast.success(res.data.msg, {
-          position: "bottom-left",
+          position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,

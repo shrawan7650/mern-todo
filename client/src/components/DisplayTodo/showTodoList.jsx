@@ -31,7 +31,7 @@ const ShowTodoList = () => {
     try {
       await axios.delete(`http://localhost:3000/api/todo/${id}`);
       toast.success("Todo deleted successfully", {
-        position: "bottom-left",
+        position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,

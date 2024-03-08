@@ -29,7 +29,7 @@ const CreateTodo = () => {
        const res = await axios.post("http://localhost:3000/api/todo/add", todo);
         // alert(res.data.message);
         toast.success(res.data.message, {
-          position: "bottom-left",
+          position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,

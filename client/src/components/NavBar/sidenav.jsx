@@ -8,7 +8,7 @@ export const SideBar = ({ closeHandler,isOpen }) => {
       <div className="side-navbar-nav">
         <NavLink to="/">Show Todo</NavLink>
         <NavLink to="/create-todo">Create Todo</NavLink>
-        <NavLink to="/update-todo">Update Todo</NavLink>
+       
       </div>
       <IoCloseSharp className="icon" onClick={closeHandler} />
     </div>
