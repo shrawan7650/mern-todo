@@ -1,0 +1,118 @@
+
+.wrapper-update{
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* border: 1px solid red;  */
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: blanchedalmond;
+border-radius: 10px;
+}
+.main-conatiner-update{
+  /* border: 1px solid  red;   */
+  width: 38%;
+  margin: auto;
+ font-size: x-large;
+ margin-top: 10%;
+ text-align: center;
+}
+.image-update{
+
+
+ width:60%;
+ /* max-height: 80%; */
+ min-height: 30%;
+border: 1px solid gray;
+border-radius: 20px;
+ /* border: 1px solid green;   */
+ margin-top: 20px;
+ margin-left: 2px;
+ aspect-ratio: 9/6 auto;
+}
+.image-update > img{
+  width: 100%;
+  max-height: 100%;
+  mix-blend-mode: normal;
+  border-radius: 20px;
+}
+
+@media screen and (max-width:420px) {
+  .wrapper-update {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color: blanchedalmond;
+    /* border: 1px solid red; */
+  }
+  .main-conatiner-update {
+    /* border: 1px solid  red;   */
+    width: 90%;
+    margin: auto;
+    font-size: x-large;
+    margin-top: 10%;
+    text-align: center;
+  }
+  .image-update {
+    width: 100%;
+    /* max-height: 80%; */
+    border: 1px solid gray;
+    border-radius: 20px;
+    /* border: 1px solid green; */
+    margin-top: 20px;
+    margin-left: 2px;
+    aspect-ratio: 9/6 auto;
+  }
+  
+  .image-update > img{
+    width: 100%;
+    /* min-height: 100%; */
+    mix-blend-mode: normal;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width:820px) {
+  .wrapper-update {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color: blanchedalmond;
+    /* border: 1px solid red; */
+  }
+  .main-conatiner-update {
+    /* border: 1px solid  red;   */
+    width: 90%;
+    margin: auto;
+    font-size: x-large;
+    margin-top: 10%;
+    text-align: center;
+  }
+  .image-update {
+    width: 100%;
+    /* max-height: 80%; */
+    border: 1px solid gray;
+    border-radius: 20px;
+    /* border: 1px solid green; */
+    margin-top: 20px;
+    margin-left: 2px;
+    aspect-ratio: 9/6 auto;
+  }
+  
+  .image-update > img{
+    width: 100%;
+    /* min-height: 100%; */
+    mix-blend-mode: normal;
+    border-radius: 20px;
+  }
+}

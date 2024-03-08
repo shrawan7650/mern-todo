@@ -1,0 +1,14 @@
+.show-todo-conatiner{
+      
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  justify-content: space-around;
+  margin-top: 5px;
+
+}
+.show-heading{
+  text-align: center;
+  margin-top: 5px;
+  /* background-color: bisque; */
+}
