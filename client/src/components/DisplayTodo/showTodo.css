@@ -1,5 +1,10 @@
+.display-main-container{
+  background-color:grey;
+  min-height: 100vh;
+  color: white;
+}
 .show-todo-conatiner{
-      
+     
   display: flex;
   flex-wrap: wrap;
   column-gap: 8px;

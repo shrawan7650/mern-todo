@@ -3,7 +3,7 @@ import './card.css'
 const TodoCard = ({data,deleteHandler,editHandler}) => {
 
 
-  return (
+  return  (
     <div>
       
       <div className="card text-center mb-3" style={{"width": "18rem"}}>

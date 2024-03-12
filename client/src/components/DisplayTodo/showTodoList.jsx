@@ -5,6 +5,7 @@ import { Bounce, toast } from 'react-toastify';
 import Spinner from "../Spinner/Spinner";
 import "./showTodo.css";
 import { useNavigate } from "react-router-dom";
+import { Empty } from "../EmptyTodo.jsx/Empty";
 const ShowTodoList = () => {
   const [value, setValue] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -49,11 +50,12 @@ const ShowTodoList = () => {
   const editHandler = (id) => {
     navigate(`/update-todo?id=${id}`);
   };  
-  return loading ? (
+  return value.length===0 ?<Empty/>:loading ? (
     <Spinner />
   ) : (
     <>
-      <h1 className="show-heading">SHOW TODO LIST</h1>
+  <div className="display-main-container">
+  <h1 className="show-heading">SHOW TODO LIST</h1>
       <div className="line-show"></div>
       <div className="show-todo-conatiner">
         {value.map((data) => (
@@ -65,6 +67,7 @@ const ShowTodoList = () => {
           />
         ))}
       </div>
+  </div>
     </>
   );
 };
