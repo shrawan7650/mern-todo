@@ -3,8 +3,9 @@ import axios from "axios";
 import "./update.css";
 import { Bounce, toast } from 'react-toastify';
 import image from "../../assets/update.png";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 export const UpdateTodo = () => {
+  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const myParam = searchParams.get("id");
   // console.log("params",myParam)
@@ -45,6 +46,7 @@ export const UpdateTodo = () => {
           theme: "light",
           transition: Bounce,
           });
+          navigate('/')
       //  alert(res.data.msg)
         // console.log(res)
         setValue({ title: "", description: "" }); // Clear input fields after successful submission

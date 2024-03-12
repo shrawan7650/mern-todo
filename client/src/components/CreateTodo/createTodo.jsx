@@ -3,7 +3,9 @@ import axios from "axios";
 import './create.css'
 import image  from '../../assets/todo add.jpg'
 import { Bounce, toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
 const CreateTodo = () => {
+  const navigate = useNavigate()
   const [value, setValue] = useState({
     title: "",
     description: "",
@@ -39,7 +41,9 @@ const CreateTodo = () => {
           theme: "light",
           transition: Bounce,
           });
-        setValue({ title: "", description: "" }); // Clear input fields after successful submission
+        setValue({ title: "", description: "" }); 
+        navigate('/')
+        // Clear input fields after successful submission
       } catch (err) {
         console.log("Error couldn't create TODO");
         console.log(err.message);
